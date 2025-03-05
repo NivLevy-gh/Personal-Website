@@ -1,72 +1,204 @@
 body {
-    font-family: outfit, Arial;
+    font-family: 'Outfit', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Full page height */
+    margin: 0;
+    font-family: Outfit, Arial; 
+
+    
 }
 
-ul {
+ul, li {
     list-style: none;
-    display: flex;
-    gap: 60px;
     margin: 0;
     padding: 0;
 }
 
+ul {
+    display: flex;
+    gap: 60px;
+}
+
+li {
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
 li:hover {
+    color: rgb(255, 132, 0); /* Color change */
     transform: scale(1.1);
+}
+
+.meet {
     transition: transform 0.3s ease-in-out;
+    background-color: rgb(255, 132, 0);
+    color: white;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
 }
 
 .meet:hover {
-    transform: scale(1.05);         /* Enlarges the box */
-    transition: transform 0.3s ease-in-out;
+    transform: scale(1.05);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .wanna:hover {
-    transform: scale(1);          /* Enlarges the text */
-    transition: transform 0.3s ease-in-out;
+    transform: scale(1);
 }
+
 nav {
     width: 80%;
     height: 90px;
-    margin: auto;
+    margin: 30px auto;
     background-color: white;
     border-radius: 20px;
-    margin-top: 30px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
 }
 
 .nav {
-    display:flex;
+    display: flex;
     width: 100%;
-    justify-content: center;     
-    align-items: center;  
-    }
+    justify-content: center;
+    align-items: center;
+}
 
 .intro {
     width: 80%;
     margin: auto;
-    height: 600px;
+    height: 380px;
+    text-align: center;
 }
 
 h1 {
     font-size: 150px;
-    text-align: center;
     margin-top: 100px;
-}
-
-.meet {
-    background-color: rgb(255, 132, 0);
-    color: white;
-    width: 130px;
-    height: 30px;
-    display: flex;            
-    justify-content: center;     
-    align-items: center;      
-    border-radius: 10px;
-    margin-left: auto;
 }
 
 * {
     box-sizing: border-box;
-  }
-  
+}
+
+.intro span {
+    display: inline-block; /* Allows letter animation */
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.intro span:hover {
+    color: rgb(255, 132, 0);
+    transform: scale(1.1);
+}
+
+.circle {
+    width: 85px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border: 4px solid rgb(255, 132, 0);
+}
+
+.circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gradient {
+    background: linear-gradient(90deg, #ff7f00, #ff3c00); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    display: inline; 
+    pointer-events: none; /* This stops hover from affecting the gradient */
+}
+
+.butt {
+    display: flex;
+    margin: auto;
+    gap: 20px;
+    width: 300px;
+    margin: auto;
+}
+
+.about {
+    background-color: rgb(255, 77, 0);
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.linkedin {
+    background-color: rgb(0, 102, 255);
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;   
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.linkedin:hover, .about:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.box {
+    width: 100%; 
+    height: 850px;
+    background-color: orange;
+    margin-top: 190px;
+    display:flex;
+    gap: 20px;
+}
+
+
+.textab {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+    
+
+}
+
+.half1 {
+    width: 50%;
+    height: 100%;
+    padding: 80px;
+}
+
+
+
+.babypo {
+    transform: rotate(8deg);
+    transform: rotate(3deg);
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+}
