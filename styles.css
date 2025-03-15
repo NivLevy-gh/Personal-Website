@@ -1,13 +1,10 @@
 
-.body {
+body {
     font-family: Outfit;
-    width: 51%;
+    width: 50%;
     margin: auto;
 }
 
-.intro {
-    display: flex;
-}
 a {
     text-decoration: none; 
     color: black; 
@@ -33,7 +30,7 @@ a {
 }
 
 h1 {
-    margin-top: 100px;
+    margin-top: 135px;  
 }
 
 @media (max-width: 1440px) { /* Adjust for larger screens */ }
@@ -71,6 +68,7 @@ p {
 
 .pton {
     color: orange;
+    
 }
 
 .arrow {
@@ -165,11 +163,128 @@ p {
     margin-right: -170px;
 }
   
-span {
-    font-size: 13px;
-    color: grey;
+.intro {
+    display: flex;
+    height: 150px;
+    align-items: center;
 }
 
-.find {
-    margin-top: 50px;
+.meet {
+    width: 100px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-top: 116px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.meet:hover {
+    background-color: rgb(223, 222, 222); 
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transform: scale(1.05);
+}
+
+.position {
+    font-weight: 500;
+    font-size: 10px;
+    color:grey;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+.sm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+
+}
+
+.imaged {
+    width: 100%;
+    height: 100%;
+}
+
+.sm:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.instagram, .twitter, .linkedin{
+    border-radius: 10px;
+}
+
+.spotify {
+    border-radius: 50px;
+
+}
+
+.youtube {
+    width: 48px;
+    height: 34px;
+    border-radius: 10px;
+}
+
+.yt {
+    width: 100px;
+    height: 100px;
+}
+
+.li {
+    width: 55px;
+    height: 55px;
+}
+
+h3 {
+    font-weight: lighter;
+}
+
+
+.tech {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.lan {
+    height: 30px;
+    padding: 1px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: lighter;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid rgb(210, 210, 210);
+    transition: transform 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.langimg {
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+}
+
+.lan:hover {
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transform: scale(1.05);
+    background-color: rgb(239, 239, 239); 
 }
