@@ -36,7 +36,14 @@ h1 {
     margin-top: 100px;
 }
 
+@media (max-width: 1440px) { /* Adjust for larger screens */ }
+@media (max-width: 1024px) { /* Adjust for medium screens */ }
+@media (max-width: 768px) { /* Adjust for tablets */ }
 
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 
 @keyframes wave-animation {
     0% { transform: rotate(0deg); }
